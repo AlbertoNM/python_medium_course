@@ -1,0 +1,12 @@
+def divisors(num):
+  divisors = [i for i in range(1, num+1) if num % i == 1]
+  return divisors
+
+def run():
+  num = input('Type a number: ')
+  assert num.isnumeric(), 'Invalid value'
+  print(divisors(int(num)))
+
+
+if __name__ == '__main__':
+  run()
